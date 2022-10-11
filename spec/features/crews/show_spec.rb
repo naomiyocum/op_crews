@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'the crews show page' do
   it 'shows the name of specific crew' do
-    crew = Crew.create(name: 'Straw Hat Pirates', ranking: 1, ship: 'Thousand Sunny', worst_generation: true)
+    crew = Crew.create!(name: 'Straw Hat Pirates', ranking: 1, ship: 'Thousand Sunny', worst_generation: true)
     
     visit "/crews/#{crew.id}"
 
