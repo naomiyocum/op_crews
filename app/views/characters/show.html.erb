@@ -1,6 +1,6 @@
 <h1><center><%= @char.id %> <%= @char.name %></center></h1>
 
-<h3><a href="/crews/:id">Crew ID</a></h3>
+<h3><a href="/crews/<%= @char.crew_id %>">Crew ID</a></h3>
 <p style="margin-left: 20px;"><%= @char.crew_id %></p>
 
 <h3>Age</h3>

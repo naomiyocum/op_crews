@@ -1,3 +1,3 @@
 <% @crews.each do |crew| %>
-  <h1><%= crew.name %></h1>
+  <h1><a href="crews/<%= crew.id %>"><%= crew.name %></a></h1>
 <% end %>

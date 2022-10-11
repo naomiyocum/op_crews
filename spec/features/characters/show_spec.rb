@@ -8,7 +8,7 @@ RSpec.describe 'the characters show page', type: :feature do
   describe 'character show page' do
     it 'shows the attributes for the specific character' do
       visit "/characters/#{luffy.id}"
-      save_and_open_page
+      
       expect(page).to have_content(luffy.name)
       expect(page).to have_content(luffy.id)
       expect(page).to have_content(luffy.age)
