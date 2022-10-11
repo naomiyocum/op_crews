@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'the crews show page' do
+RSpec.describe 'the crews show page', type: :feature do
   let!(:crew) {Crew.create!(name: 'Straw Hat Pirates', ranking: 1, ship: 'Thousand Sunny', worst_generation: true)}
   
   describe 'when a user goes to the crews show page' do 

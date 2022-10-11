@@ -1,0 +1,23 @@
+<h1><center><%= @char.id %> <%= @char.name %></center></h1>
+
+<h3><a href="/crews/:id">Crew ID</a></h3>
+<p style="margin-left: 20px;"><%= @char.crew_id %></p>
+
+<h3>Age</h3>
+<p style="margin-left: 20px;"><%= @char.age %></p>
+
+<h3>Devil Fruit Eater?</h3>
+<p style="margin-left: 20px;"><%= @char.devil_fruit_eater %></p>
+
+<h3>Epithet</h3>
+<p style="margin-left: 20px;"><%= @char.epithet %></p>
+
+<br><br>
+
+<h3>Bounty!</h3>
+<p style="margin-left: 20px; font-size: 30px;">¥<%= @char.bounty %>00</p>
+
+<div style="font-size:15px;position:fixed; bottom:0;">
+  <p>Created at: <%= @char.created_at %></p>
+  <p>Last updated: <%= @char.updated_at %></p>
+</div>

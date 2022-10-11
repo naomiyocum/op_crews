@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'index of crews' do
+RSpec.describe 'index of crews', type: :feature do
   let!(:crew) {Crew.create!(name: 'Straw Hat Pirates', ranking: 1, ship: 'Thousand Sunny', worst_generation: true)}
   let!(:crew_2) {Crew.create!(name: 'Roger Pirates', ranking: 2, ship: 'Oro Jackson', worst_generation: false)}
 
