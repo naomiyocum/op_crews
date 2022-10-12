@@ -8,14 +8,10 @@ RSpec.describe Character, type: :model do
   it {should belong_to(:crew)}
 
   describe 'validations' do
-    it 'validates the presence of a specific attribute' do
-      expect(luffy.validate_presence_of(:name)).to be(true)
-      expect(luffy.validate_presence_of(:id)).to be(true)
-      expect(luffy.validate_presence_of(:age)).to be(true)
-      expect(luffy.validate_presence_of(:devil_fruit_eater)).to be(true)
-      expect(luffy.validate_presence_of(:epithet)).to be(true)
-      expect(luffy.validate_presence_of(:crew_id)).to be(true)
-      expect(luffy.validate_presence_of(:bounty)).to be(true)
-    end
+    it {should validate_presence_of(:name)}
+    it {should validate_presence_of(:age)}
+    it {should validate_presence_of(:epithet)}
+    it {should validate_presence_of(:bounty)}
   end
+
 end

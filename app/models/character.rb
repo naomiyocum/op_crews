@@ -1,7 +1,9 @@
 class Character < ApplicationRecord
   belongs_to :crew
 
-  def validate_presence_of(attribute)
-    self.has_attribute?(attribute)
-  end
+  validates :name, presence: true
+  validates :age, presence: true
+  validates :epithet, presence: true
+  validates :bounty, presence: true
+  validates :crew_id, presence: true
 end
