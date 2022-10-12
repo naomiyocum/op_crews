@@ -30,5 +30,13 @@ RSpec.describe 'the crews show page', type: :feature do
       
       expect(page).to have_content(@crew.characters.count)
     end
+
+    it 'displays a link to take user to the characters of the crew' do
+      visit "/crews/#{@crew.id}"
+
+      click_on @crew.characters.count
+
+      expect(current_path).to eq("/crews/#{@crew.id}/characters")
+    end
   end
 end

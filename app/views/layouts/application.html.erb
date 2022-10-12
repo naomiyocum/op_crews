@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OpCrews</title>
+    <title>One Piece!</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <header>
+      <nav style="position:fixed; right: 0; top: 0; padding: 1em;">
+        <a href="/crews" style="text-decoration: none; color: blue;">Crews</a> |
+        <a href="/characters" style="text-decoration: none; color: blue;">Members</a>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
