@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   
   get '/crews/:id/characters', to:'crew_characters#index'
 
+  get '/characters/:id/edit', to:'characters#edit'
   get '/characters', to:'characters#index'
   get '/characters/:id', to:'characters#show'
 
@@ -14,4 +15,6 @@ Rails.application.routes.draw do
   patch '/crews/:id', to: 'crews#update'
 
   post '/crews/:id/characters', to:'characters#create'
+  patch '/characters/:id', to: 'characters#update'
+
 end

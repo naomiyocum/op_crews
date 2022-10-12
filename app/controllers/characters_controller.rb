@@ -8,6 +8,16 @@ class CharactersController < ApplicationController
     @char = Character.find(params[:id])
   end
 
+  def edit
+    @char = Character.find(params[:id])
+  end
+
+  def update
+    char = Character.find(params[:id])
+    char.update(char_params)
+    redirect_to "/characters/#{char.id}"
+  end
+
   def new
     @crew = Crew.find(params[:id])
   end
