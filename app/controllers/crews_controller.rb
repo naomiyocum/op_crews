@@ -6,4 +6,16 @@ class CrewsController < ApplicationController
   def show
     @crew = Crew.find(params[:id])
   end
+
+  def new
+  end
+
+  def create
+    crew = Crew.create(crew_params)
+    redirect_to "/crews"
+  end
+
+  def crew_params
+    params.permit(:name, :ship, :ranking, :worst_generation)
+  end
 end
