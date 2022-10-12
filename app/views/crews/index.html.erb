@@ -1,0 +1,4 @@
+<% @crews.each do |crew| %>
+  <h1><a href="crews/<%= crew.id %>"><%= crew.name %></a></h1>
+  <p style="font-size:15px;"><%= crew.created_at%></p>
+<% end %>

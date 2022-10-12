@@ -1,0 +1,11 @@
+<center><h1><%= @crew.id %> <%= @crew.name %></h1>
+<p><a href="/crews/<%= @crew.id %>/characters"><%= @crew.characters.count %> Members</a></p></center>
+
+<h3>Ranking: <%= @crew.ranking %></h3>
+<h3>Ship: <%= @crew.ship %></h3>
+<h3>Worst Generation? <%= @crew.worst_generation %></h3>
+
+<div style="position:fixed; bottom:0;">
+  <p>Created at: <%= @crew.created_at %></p>
+  <p>Last updated: <%= @crew.updated_at %></p>
+</div>
