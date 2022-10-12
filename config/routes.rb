@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/crews/:id/characters/new', to: 'characters#new'
   get '/crews', to:'crews#index'
   get '/crews/new', to: 'crews#new'
   get '/crews/:id', to:'crews#show'
@@ -11,4 +12,6 @@ Rails.application.routes.draw do
 
   post '/crews', to:'crews#create'
   patch '/crews/:id', to: 'crews#update'
+
+  post '/crews/:id/characters', to:'characters#create'
 end

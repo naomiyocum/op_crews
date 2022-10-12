@@ -7,4 +7,18 @@ class CharactersController < ApplicationController
   def show
     @char = Character.find(params[:id])
   end
+
+  def new
+    @crew = Crew.find(params[:id])
+  end
+
+  def create
+    crew = Crew.find(params[:id])
+    char = Character.create(char_params)
+    redirect_to "/crews/#{crew.id}/characters"
+  end
+
+  def char_params
+    params.permit(:name, :age, :devil_fruit_eater, :epithet, :bounty, :crew_id)
+  end
 end
