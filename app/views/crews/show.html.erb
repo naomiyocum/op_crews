@@ -5,6 +5,8 @@
 <h3>Ship: <%= @crew.ship %></h3>
 <h3>Worst Generation? <%= @crew.worst_generation %></h3>
 
+<%= button_to 'Update Crew', "/crews/#{@crew.id}/edit", method: :get %>
+
 <div style="position:fixed; bottom:0;">
   <p>Created at: <%= @crew.created_at %></p>
   <p>Last updated: <%= @crew.updated_at %></p>
