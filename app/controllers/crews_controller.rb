@@ -10,6 +10,12 @@ class CrewsController < ApplicationController
   def new
   end
 
+  def destroy
+    crew = Crew.find(params[:id])
+    crew.destroy
+    redirect_to "/crews"
+  end
+
   def edit
     @crew = Crew.find(params[:id])
   end

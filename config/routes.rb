@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   post '/crews/:id/characters', to:'characters#create'
   patch '/characters/:id', to: 'characters#update'
 
+  delete 'crews/:id', to:'crews#destroy'
+
 end
