@@ -1,7 +1,7 @@
 class CharactersController < ApplicationController
 
   def index
-    @characters = Character.all
+    @characters = Character.where(devil_fruit_eater: true)
   end
 
   def show
