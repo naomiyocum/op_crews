@@ -19,6 +19,12 @@ RSpec.describe 'index of crews', type: :feature do
       expect(page).to have_content(crew_2.created_at)
     end
 
+    it 'shows in order by most recently created' do
+      visit '/crews'
+
+      expect(crew.name).to appear_before(crew_2.name)
+    end
+
     it 'has an edit button for every crew' do
       visit '/crews'
 
