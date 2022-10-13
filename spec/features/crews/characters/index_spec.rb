@@ -25,5 +25,11 @@ RSpec.describe 'list characters of specific crew', type: :feature do
 
       # how to test characters are showing alphabetically
     end
+
+    it 'shows an edit button next to each character' do
+      visit "crews/#{crew.id}/characters"
+
+      expect(page).to have_selector(:link_or_button, 'Edit')
+    end
   end
 end

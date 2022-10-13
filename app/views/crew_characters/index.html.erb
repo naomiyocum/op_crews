@@ -9,6 +9,7 @@
 
   <p style="font-size:10px;">Created at: <%= char.created_at %></p>
   <p style="font-size:10px;">Last updated: <%= char.updated_at %></p>
+  <%= button_to "Edit", "/characters/#{char.id}/edit", method: :get %>
 <% end %>
 
 <div style="position:fixed; padding: 1em; bottom: 0; right: 0;">

@@ -41,4 +41,10 @@ RSpec.describe 'index of characters', type: :feature do
     expect(page).to have_content(luffy.updated_at)
     expect(page).to have_content(chopper.updated_at)
   end
+
+  it 'has an edit button near each character' do
+    visit "/characters"
+
+    expect(page).to have_selector(:link_or_button, 'Edit')
+  end
 end
