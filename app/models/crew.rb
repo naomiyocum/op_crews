@@ -1,8 +1,9 @@
 class Crew < ApplicationRecord
   has_many :characters
 
-  def validate_presence_of(attribute)
-    self.has_attribute?(attribute)
-  end
+  validates :name, presence: true
+  validates :ship, presence: true
+  validates :ranking, presence: true
+  
 
 end
