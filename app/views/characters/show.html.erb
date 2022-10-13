@@ -17,7 +17,8 @@
 <h3>Bounty!</h3>
 <p style="margin-left: 20px; font-size: 30px;">¥<%= @char.bounty %>00</p>
 
-<%= link_to 'Update Me', "/characters/#{@char.id}/edit" %>
+<%= link_to 'Update Me', "/characters/#{@char.id}/edit" %><br><br>
+<%= button_to 'Delete', "/characters/#{@char.id}", method: :delete %>
 
 <div style="font-size:15px;position:fixed; bottom:0;">
   <p>Created at: <%= @char.created_at %></p>

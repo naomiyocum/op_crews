@@ -12,6 +12,12 @@ class CharactersController < ApplicationController
     @char = Character.find(params[:id])
   end
 
+  def destroy
+    char = Character.find(params[:id])
+    char.destroy
+    redirect_to "/characters"
+  end
+
   def update
     char = Character.find(params[:id])
     char.update(char_params)

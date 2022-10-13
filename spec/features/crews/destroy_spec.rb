@@ -12,7 +12,7 @@ RSpec.describe 'destroy crew and corresponding members', type: :feature do
     @silver = Character.create!(name: 'Silvers Rayleigh', age: 78, devil_fruit_eater: false, epithet: 'Right Hand of PK', bounty: 0, crew_id: @crew_2.id)
   end
   
-  it 'can delete the artist from the show page' do
+  it 'can delete the crew from the show page' do
     visit "/crews/#{@crew.id}"
 
     click_button 'Delete'
