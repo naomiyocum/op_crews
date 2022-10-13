@@ -10,7 +10,8 @@
   <p style="font-size:10px;">Created at: <%= char.created_at %></p>
   <p style="font-size:10px;">Last updated: <%= char.updated_at %></p>
 
-  <%= button_to 'Edit', "/characters/#{char.id}/edit", method: :get %>
+  <%= button_to 'Edit', "/characters/#{char.id}/edit", method: :get %><br>
+  <%= button_to 'Delete', "/characters/#{char.id}", method: :delete %>
 <% end %>
 
 
