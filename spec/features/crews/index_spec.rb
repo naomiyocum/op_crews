@@ -18,5 +18,12 @@ RSpec.describe 'index of crews', type: :feature do
       expect(page).to have_content(crew.created_at)
       expect(page).to have_content(crew_2.created_at)
     end
+
+    it 'has an edit button for every crew' do
+      visit '/crews'
+
+      expect(page).to have_selector(:link_or_button, 'Edit')
+
+    end
   end
 end
