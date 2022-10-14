@@ -21,7 +21,6 @@ RSpec.describe 'the character creation', type: :feature do
     fill_in(id:"devil", with: false)
     fill_in('Epithet', with: 'Black Leg')
     fill_in('Bounty', with: 10320000)
-    fill_in(id:"crewid", with: "#{@crew.id}")
 
     click_button 'Create Member'
 

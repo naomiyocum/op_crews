@@ -30,7 +30,7 @@ class CharactersController < ApplicationController
 
   def create
     crew = Crew.find(params[:id])
-    char = Character.create(char_params)
+    char = crew.characters.create(char_params)
     redirect_to "/crews/#{crew.id}/characters"
   end
 
