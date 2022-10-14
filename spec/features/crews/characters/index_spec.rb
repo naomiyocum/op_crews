@@ -20,9 +20,9 @@ RSpec.describe 'list characters of specific crew', type: :feature do
 
     it 'shows a link to sort characters alphabetically' do
       visit "crews/#{crew.id}/characters"
-      save_and_open_page
+
       click_link 'Alphabetize'
-      save_and_open_page
+
       expect(luffy.name).to appear_before(zoro.name)
       expect(zoro.name).to appear_before(chopper.name)
     end
