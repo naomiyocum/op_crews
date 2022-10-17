@@ -8,7 +8,7 @@ class CrewCharactersController < ApplicationController
     end
 
     if params.include?("bounties_higher_than")
-      @chars = @chars.select {|char| char.bounty > params["bounties_higher_than"].to_i}
+      @chars = @chars.where("bounty > #{params["bounties_higher_than"].to_i}")
     end
   end
 
