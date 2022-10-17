@@ -4,6 +4,10 @@ class Crew < ApplicationRecord
   validates :name, presence: true
   validates :ship, presence: true
   validates :ranking, presence: true
+
+  def chars_count
+    characters.count
+  end
   
 
 end
