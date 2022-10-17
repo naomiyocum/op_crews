@@ -1,5 +1,5 @@
 <% @chars.each do |char| %>
-  <h1><%= char.id %> <%= char.name %></h1>
+  <h1><a href="/characters/<%= char.id %>"><%= char.id %> <%= char.name %></a></h1>
   <p>Crew ID: <%= char.crew_id %></p>
 
   <h3>Age: <%= char.age %></h3>
