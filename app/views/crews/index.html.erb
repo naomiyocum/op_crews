@@ -1,7 +1,8 @@
 <% @crews.each do |crew| %>
   <h1><a href="crews/<%= crew.id %>"><%= crew.name %></a></h1>
   <p style="font-size:15px;"><%= crew.created_at%></p>
-  <%= button_to "Edit", "/crews/#{crew.id}/edit", method: :get %>
+  <%= button_to "Edit", "/crews/#{crew.id}/edit", method: :get %><br>
+  <%= button_to 'Delete', "/crews/#{crew.id}", method: :delete %>
 <% end %><br>
 
 <%= link_to "New Crew", "/crews/new" %>

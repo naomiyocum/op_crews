@@ -12,6 +12,12 @@ class CharactersController < ApplicationController
     @char = Character.find(params[:id])
   end
 
+  def destroy
+    char = Character.find(params[:id])
+    char.destroy
+    redirect_to "/characters"
+  end
+
   def update
     char = Character.find(params[:id])
     char.update(char_params)
@@ -24,10 +30,11 @@ class CharactersController < ApplicationController
 
   def create
     crew = Crew.find(params[:id])
-    char = Character.create(char_params)
+    char = crew.characters.create(char_params)
     redirect_to "/crews/#{crew.id}/characters"
   end
 
+private
   def char_params
     params.permit(:name, :age, :devil_fruit_eater, :epithet, :bounty, :crew_id)
   end

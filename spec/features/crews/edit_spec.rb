@@ -23,7 +23,7 @@ RSpec.describe 'edits the crew', type: :feature do
     fill_in 'Name', with: 'Straw Hat Pirates'
     fill_in 'Ranking', with: 1
     fill_in 'Ship', with: 'Thousand Sunny'
-    fill_in id:"worst", with: true
+    select('true', from: :worst_generation)
 
     click_button 'Update Crew'
 

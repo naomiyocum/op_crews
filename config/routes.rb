@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/', to: 'welcome#index'
   get '/crews/:id/characters/new', to: 'characters#new'
   get '/crews', to:'crews#index'
   get '/crews/new', to: 'crews#new'
@@ -16,5 +17,8 @@ Rails.application.routes.draw do
 
   post '/crews/:id/characters', to:'characters#create'
   patch '/characters/:id', to: 'characters#update'
+
+  delete 'crews/:id', to:'crews#destroy'
+  delete 'characters/:id', to:'characters#destroy'
 
 end

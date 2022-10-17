@@ -18,18 +18,34 @@ RSpec.describe 'list characters of specific crew', type: :feature do
       expect(page).to have_content(zoro.name)
     end
 
-    xit 'shows a link to sort characters alphabetically' do
+    it 'shows a link to sort characters alphabetically' do
       visit "crews/#{crew.id}/characters"
 
       click_link 'Alphabetize'
 
-      # how to test characters are showing alphabetically
+      expect(luffy.name).to appear_before(zoro.name)
+      expect(zoro.name).to appear_before(chopper.name)
     end
 
     it 'shows an edit button next to each character' do
       visit "crews/#{crew.id}/characters"
 
       expect(page).to have_selector(:link_or_button, 'Edit')
+    end
+
+    it 'has a delete button near each character' do
+      visit "crews/#{crew.id}/characters"
+
+      expect(page).to have_selector(:link_or_button, 'Delete')
+    end
+
+    it 'has a form allowing input for bounties' do 
+      visit "crews/#{crew.id}/characters"
+
+      fill_in('Bounties higher than', with: 100000)
+      click_button 'Submit'
+
+      expect(page).to_not have_content(chopper.name)
     end
   end
 end

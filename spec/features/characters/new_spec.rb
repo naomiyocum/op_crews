@@ -18,10 +18,9 @@ RSpec.describe 'the character creation', type: :feature do
 
     fill_in('Name', with: 'Sanji')
     fill_in('Age', with: 21)
-    fill_in(id:"devil", with: false)
+    select('false', from: :devil_fruit_eater)
     fill_in('Epithet', with: 'Black Leg')
     fill_in('Bounty', with: 10320000)
-    fill_in(id:"crewid", with: "#{@crew.id}")
 
     click_button 'Create Member'
 

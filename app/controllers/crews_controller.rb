@@ -1,6 +1,6 @@
 class CrewsController < ApplicationController
   def index
-    @crews = Crew.order(:created_at)
+    @crews = Crew.order(created_at: :desc)
   end
 
   def show
@@ -8,6 +8,12 @@ class CrewsController < ApplicationController
   end
 
   def new
+  end
+
+  def destroy
+    crew = Crew.find(params[:id])
+    crew.destroy
+    redirect_to "/crews"
   end
 
   def edit

@@ -14,7 +14,7 @@ RSpec.describe 'the crew creation', type: :feature do
     fill_in('Name', with: 'Kid Pirates')    
     fill_in('Ranking', with: '24')    
     fill_in('Ship', with: 'Victoria Punk')    
-    fill_in(id:"worst", with: true)    
+    select('true', from: :worst_generation)   
 
     click_button('Create Crew')
 

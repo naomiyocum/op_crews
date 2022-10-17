@@ -47,4 +47,10 @@ RSpec.describe 'index of characters', type: :feature do
 
     expect(page).to have_selector(:link_or_button, 'Edit')
   end
+
+  it 'has a delete button near each character' do
+    visit "/characters"
+
+    expect(page).to have_selector(:link_or_button, 'Delete')
+  end
 end

@@ -22,10 +22,9 @@ RSpec.describe 'edit the member', type: :feature do
 
     fill_in 'Name', with: 'Monkey D. Luffy'
     fill_in 'Age', with: 21
-    fill_in id:"devil", with: true
+    select('true', from: :devil_fruit_eater)
     fill_in 'Epithet', with: 'Straw Hat'
     fill_in 'Bounty', with: 458748574
-    fill_in id:"crewid", with: @crew.id
 
     click_button 'Update Me'
 

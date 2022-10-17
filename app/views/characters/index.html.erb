@@ -1,16 +1,17 @@
 <% @characters.each do |char| %>
-  <h1><%= char.id %> <%= char.name %></h1>
+  <h1><a href="/characters/<%= char.id %>"><%= char.id %> <%= char.name %></a></h1>
   <p>Crew ID: <%= char.crew_id %></p>
 
   <h3>Age: <%= char.age %></h3>
   <h3>Devil Fruit Eater? <%= char.devil_fruit_eater %></h3>
   <h3>Epithet: <%= char.epithet %></h3>
-  <h3>Bounty: <%= char.bounty %></h3>
+  <h3>Bounty: ¥ <%= char.bounty %></h3>
 
   <p style="font-size:10px;">Created at: <%= char.created_at %></p>
   <p style="font-size:10px;">Last updated: <%= char.updated_at %></p>
 
-  <%= button_to 'Edit', "/characters/#{char.id}/edit", method: :get %>
+  <%= button_to 'Edit', "/characters/#{char.id}/edit", method: :get %><br>
+  <%= button_to 'Delete', "/characters/#{char.id}", method: :delete %>
 <% end %>
 
 
