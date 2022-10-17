@@ -1,6 +1,6 @@
 class CrewsController < ApplicationController
   def index
-    @crews = Crew.order(:created_at)
+    @crews = Crew.order(created_at: :desc)
   end
 
   def show
