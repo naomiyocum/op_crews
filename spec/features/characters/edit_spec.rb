@@ -25,7 +25,6 @@ RSpec.describe 'edit the member', type: :feature do
     fill_in id:"devil", with: true
     fill_in 'Epithet', with: 'Straw Hat'
     fill_in 'Bounty', with: 458748574
-    fill_in id:"crewid", with: @crew.id
 
     click_button 'Update Me'
 
