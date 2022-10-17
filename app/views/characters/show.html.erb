@@ -20,7 +20,7 @@
 <%= link_to 'Update Me', "/characters/#{@char.id}/edit" %><br><br>
 <%= button_to 'Delete', "/characters/#{@char.id}", method: :delete %>
 
-<div style="font-size:15px;position:fixed; bottom:0;">
+<div style="font-size:15px;position:fixed; bottom:0; right:0;">
   <p>Created at: <%= @char.created_at %></p>
   <p>Last updated: <%= @char.updated_at %></p>
 </div>
