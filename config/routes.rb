@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/', to: 'welcome#index'
   get '/crews/:id/characters/new', to: 'characters#new'
   get '/crews', to:'crews#index'
   get '/crews/new', to: 'crews#new'
