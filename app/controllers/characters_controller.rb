@@ -34,6 +34,7 @@ class CharactersController < ApplicationController
     redirect_to "/crews/#{crew.id}/characters"
   end
 
+private
   def char_params
     params.permit(:name, :age, :devil_fruit_eater, :epithet, :bounty, :crew_id)
   end
