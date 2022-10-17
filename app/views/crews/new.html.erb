@@ -9,7 +9,7 @@
   <%= form.text_field :ship %><br><br>
 
   <%= form.label :worst_generation, id:"worst" %>
-  <%= form.text_field :worst_generation, id:"worst" %><br><br>
+  <%= form.select :worst_generation, [true, false], id:"worst" %><br><br>
 
   <%= form.submit "Create Crew" %>
 
