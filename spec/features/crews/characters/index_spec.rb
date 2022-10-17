@@ -34,9 +34,17 @@ RSpec.describe 'list characters of specific crew', type: :feature do
     end
 
     it 'has a delete button near each character' do
-      visit "/characters"
+      visit "crews/#{crew.id}/characters"
 
       expect(page).to have_selector(:link_or_button, 'Delete')
+    end
+
+    xit 'has a form allowing input for bounties' do 
+      visit "crews/#{crew.id}/characters"
+
+      fill_in('Bounties higher than', with: #HELLOOOO)
+
+      
     end
   end
 end

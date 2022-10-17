@@ -5,7 +5,7 @@
   <h3>Age: <%= char.age %></h3>
   <h3>Devil Fruit Eater? <%= char.devil_fruit_eater %></h3>
   <h3>Epithet: <%= char.epithet %></h3>
-  <h3>Bounty: <%= char.bounty %></h3>
+  <h3>Bounty: ¥ <%= char.bounty %>00</h3>
 
   <p style="font-size:10px;">Created at: <%= char.created_at %></p>
   <p style="font-size:10px;">Last updated: <%= char.updated_at %></p>
@@ -15,5 +15,12 @@
 
 <div style="position:fixed; padding: 1em; bottom: 0; right: 0;">
   <%= link_to 'Create Member', "/crews/#{@crew.id}/characters/new" %><br><br>
-  <%= link_to 'Alphabetize', "/crews/#{@crew.id}/characters?sorted=true" %>
+  <%= link_to 'Alphabetize', "/crews/#{@crew.id}/characters?sorted=true" %><br><br>
+
+  <%= form_with url: "/crews/#{@crew.id}/characters", method: :get, local: true do |form| %>
+  <%= form.label :bounties_higher_than %>
+  <%= form.text_field :bounties_higher_than %><br><br>
+
+  <%= form.submit "Submit" %>
+<% end %>
 </div>
