@@ -3,13 +3,13 @@ class CrewCharactersController < ApplicationController
     @crew = Crew.find(params[:id])
     @chars = @crew.characters
 
-    if params["sorted"] != nil
-      @chars = @chars.names_sorted
-    end
+    # if params["sorted"] != nil
+    #   @chars = @chars.names_sorted
+    # end
 
-    if params.include?("yen")
-      @chars = @chars.bounties_higher_than(params["yen"].to_i)
-    end
+    # if params.include?("yen")
+    #   @chars = @chars.bounties_higher_than(params["yen"].to_i)
+    # end
   end
 
   def new
