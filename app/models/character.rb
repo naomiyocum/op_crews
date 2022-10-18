@@ -6,4 +6,8 @@ class Character < ApplicationRecord
   validates :epithet, presence: true
   validates :bounty, presence: true
   validates :crew_id, presence: true
+
+  def self.names_sorted
+    Character.order(:name)
+  end
 end

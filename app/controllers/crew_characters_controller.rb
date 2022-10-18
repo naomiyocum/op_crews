@@ -4,7 +4,7 @@ class CrewCharactersController < ApplicationController
     @chars = @crew.characters
 
     if params["sorted"] != nil
-      @chars = @chars.sort_by &:name
+      @chars = @chars.names_sorted
     end
 
     if params.include?("bounties_higher_than")
