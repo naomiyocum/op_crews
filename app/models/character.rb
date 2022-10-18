@@ -8,6 +8,6 @@ class Character < ApplicationRecord
   validates :crew_id, presence: true
 
   def self.names_sorted
-    Character.order(:name)
+    order(:name)
   end
 end
