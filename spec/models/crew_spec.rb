@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Crew, type: :model do
   let!(:crew_2) {Crew.create!(name: 'Roger Pirates', ranking: 2, ship: 'Oro Jackson', worst_generation: false)}
   let!(:crew_1) {Crew.create!(name: 'Straw Hat Pirates', ranking: 1, ship: 'Thousand Sunny', worst_generation: true)}
+  let!(:crew_3) {Crew.create!(name: 'Buggy Pirates', ranking: 100, ship: 'Big Top', worst_generation: false)}
   
   let!(:chopper) {Character.create!(name: 'Tony Tony Chopper', age: 17, devil_fruit_eater: true, epithet: 'Cotton Candy Lover', bounty: 10, crew_id: crew_1.id)}
   let!(:zoro) {Character.create!(name: 'Roronoa Zoro', age: 21, devil_fruit_eater: false, epithet: 'Pirate Hunter', bounty: 11_110_000, crew_id: crew_1.id)}
@@ -24,4 +25,9 @@ RSpec.describe Crew, type: :model do
     end
   end
   
+  describe '#sorted_crews' do
+    it 'returns the crews ordered by character count' do
+      expect(Crew.sorted_crews).to eq([crew_1, crew_2, crew_3])
+    end
+  end
 end

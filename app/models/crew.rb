@@ -9,5 +9,7 @@ class Crew < ApplicationRecord
     characters.count
   end
   
-
+  def self.sorted_crews
+    find_each.sort {|a,b| b.characters.length <=> a.characters.length }
+  end
 end
