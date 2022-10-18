@@ -1,3 +1,6 @@
+<% @chars = @chars.names_sorted if params["sorted"] != nil %>
+<% @chars = @chars.bounties_higher_than(params["yen"].to_i) if params.include?("yen") %>
+
 <% @chars.each do |char| %>
   <h1><a href="/characters/<%= char.id %>"><%= char.id %> <%= char.name %></a></h1>
   <p>Crew ID: <%= char.crew_id %></p>
