@@ -42,7 +42,7 @@ RSpec.describe 'list characters of specific crew', type: :feature do
     it 'has a form allowing input for bounties' do 
       visit "crews/#{crew.id}/characters"
 
-      fill_in('Bounties higher than', with: 100000)
+      fill_in('yen', with: 100000)
       click_button 'Submit'
 
       expect(page).to_not have_content(chopper.name)

@@ -18,8 +18,8 @@
   <%= link_to 'Alphabetize', "/crews/#{@crew.id}/characters?sorted=true" %><br><br>
 
   <%= form_with url: "/crews/#{@crew.id}/characters", method: :get, local: true do |form| %>
-  <%= form.label :bounties_higher_than %>
-  <%= form.text_field :bounties_higher_than %><br><br>
+  <%= form.label :yen %>
+  <%= form.text_field :yen %><br><br>
 
   <%= form.submit "Submit" %>
 <% end %>

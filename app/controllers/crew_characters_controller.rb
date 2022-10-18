@@ -7,8 +7,8 @@ class CrewCharactersController < ApplicationController
       @chars = @chars.names_sorted
     end
 
-    if params.include?("bounties_higher_than")
-      @chars = @chars.where("bounty > #{params["bounties_higher_than"].to_i}")
+    if params.include?("yen")
+      @chars = @chars.bounties_higher_than(params["yen"].to_i)
     end
   end
 

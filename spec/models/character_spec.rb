@@ -17,9 +17,16 @@ RSpec.describe Character, type: :model do
 
   describe 'class methods' do
     describe '#names_sorted' do
-       it 'returns all characters sorted by name' do
+      it 'returns all characters sorted by name' do
         expect(Character.names_sorted).to eq([luffy, zoro, chopper])
-       end
+      end
+    end
+
+    describe '#bounties_higher_than' do
+      it 'returns characters with bounties higher than given' do
+        expect(Character.bounties_higher_than(1000)).to eq([luffy, zoro])
+        expect(Character.bounties_higher_than(200_000)).to eq([luffy])
+      end
     end
   end
 

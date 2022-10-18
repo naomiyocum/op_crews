@@ -10,4 +10,8 @@ class Character < ApplicationRecord
   def self.names_sorted
     order(:name)
   end
+
+  def self.bounties_higher_than(yen)
+    select {|char| char.bounty > yen}
+  end
 end
