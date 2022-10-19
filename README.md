@@ -1,6 +1,6 @@
 # Relational Rails
 
-### Solo Project for Mod 2
+#### Solo Project during Week 1 of Mod 2
 
 ### Learning Goals
 * Write migrations to create tables with columns of varying data types and foreign keys.
