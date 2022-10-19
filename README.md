@@ -2,6 +2,7 @@
 
 ![GitHub language count](https://img.shields.io/github/languages/count/naomiyocum/op_crews)
 ![GitHub top language](https://img.shields.io/github/languages/top/naomiyocum/op_crews?color=yellow)
+https://img.shields.io/github/watchers/naomiyocum/op_crews?style=social
 
 ## Table of contents
 * [General Info](#general-info)
