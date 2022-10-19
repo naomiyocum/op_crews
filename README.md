@@ -19,6 +19,9 @@ Influenced my One Piece (great anime btw) - a crew has many characters and a cha
 First, clone this repo onto your local machine.
 Then, run the following in your Terminal:
 
-`bundle install
-rails db:{drop,create,migrate,seed}
-rails s`
+ ```bundle install
+ rails db:{drop,create,migrate,seed}
+ rails s```
+Lastly, go to your web browser and type `localhost:3000/`.
+
+Sweet, now you're on my main page! 
