@@ -27,7 +27,7 @@ Project is created with:
 
 ## Schema Design
 Below is my design for the one-to-many relationship we were to create for this project. 
-Influenced my One Piece (great anime btw) - a crew has many characters and a character belongs to a crew.
+Influenced by One Piece (great anime btw) - a crew has many characters and a character belongs to a crew.
 
 ![screen_shot_2022-10-19_at_12 09 16_pm](https://user-images.githubusercontent.com/102825498/196771136-2f9e938b-acc6-4d7f-aa30-2a74d478873b.png)
 
