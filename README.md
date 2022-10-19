@@ -1,6 +1,6 @@
 # Relational Rails - One Piece Crews!
 
-![GitHub language count](https://img.shields.io/github/languages/count/{naomiyocum}/{op_crews})
+![GitHub language count](https://img.shields.io/github/languages/count/naomiyocum/op_crews)
 
 ## Table of contents
 * [General Info](#general-info)
