@@ -1,18 +1,18 @@
 <%= form_with url: "/characters/#{@char.id}", method: :patch, local: true do |form| %>
   <%= form.label :name %>
-  <%= form.text_field :name %><br><br>
+  <%= form.text_field :name, value: @char.name %><br><br>
 
   <%= form.label :age %>
-  <%= form.text_field :age %><br><br>
+  <%= form.text_field :age, value: @char.age %><br><br>
 
   <%= form.label :devil_fruit_eater, id:"devil" %>
   <%= form.select :devil_fruit_eater, [true,false], id:"devil" %><br><br>
 
   <%= form.label :epithet %>
-  <%= form.text_field :epithet %><br><br>
+  <%= form.text_field :epithet, value: @char.epithet %><br><br>
 
   <%= form.label :bounty %>
-  <%= form.text_field :bounty %><br><br>
+  <%= form.text_field :bounty, value: @char.bounty %><br><br>
 
   <%= form.submit 'Update Me' %>
 

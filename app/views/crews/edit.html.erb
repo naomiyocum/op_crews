@@ -1,15 +1,15 @@
 <%= form_with url: "/crews/#{@crew.id}", method: :patch, local: true do |form| %>
   <%= form.label :name %>
-  <%= form.text_field :name %><br><br>
+  <%= form.text_field :name, value: @crew.name %><br><br>
 
   <%= form.label :ranking %>
-  <%= form.text_field :ranking %><br><br>
+  <%= form.text_field :ranking, value: @crew.ranking %><br><br>
 
   <%= form.label :ship %>
-  <%= form.text_field :ship %><br><br>
+  <%= form.text_field :ship, value: @crew.ship %><br><br>
 
   <%= form.label :worst_generation, id:"worst"%>
-  <%= form.select :worst_generation, [true,false], id:"worst"%><br><br>
+  <%= form.select :worst_generation, [true,false], id:"worst" %><br><br>
 
   <%= form.submit 'Update Crew' %>
 
