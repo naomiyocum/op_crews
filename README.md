@@ -41,4 +41,5 @@ rails s
 ```
 Lastly, head to your web browser and type `localhost:3000`.
 
-Sweet, now you're on my main page! There are already some crews and members created for you. Feel free to add more, edit the existing ones, or even delete some (who cares about the Blackbeard Pirates, right?).
+Sweet, now you're on my main page! There are already some crews and members created for you. 
+Feel free to add more, edit the existing ones, or even delete some (who cares about the Blackbeard Pirates, right?).
