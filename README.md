@@ -1,6 +1,20 @@
-# Relational Rails
+# Relational Rails - One Piece Crews!
 
-#### Solo Project during Week 1 of Mod 2
+![GitHub language count](https://img.shields.io/github/languages/count/{username}/{repo-name})
+
+## Table of contents
+* [General Info](#general-info)
+* [Technologies](#technologies)
+* [Learning Goals](#learning-goals)
+* [Usage](#usage)
+
+## General Info
+This is a solo project that was assigned to us during week 1 of Mod 2. For our first project in Rails, we were to create a one-to-many relationship with our data.
+
+## Technologies
+Project is created with:
+* Rails 5.2
+* Ruby 2.7
 
 ## Learning Goals
 * Write migrations to create tables with columns of varying data types and foreign keys.
@@ -24,6 +38,6 @@ bundle install
 rails db:{drop,create,migrate,seed}
 rails s
 ```
-Lastly, go to your web browser and type `localhost:3000/`.
+Lastly, head to your web browser and type `localhost:3000`.
 
-Sweet, now you're on my main page! 
+Sweet, now you're on my main page! There are already some crews and members created for you. Feel free to add more, edit the existing ones, or even delete some (who cares about the Blackbeard Pirates, right?).
