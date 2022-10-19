@@ -6,23 +6,22 @@
 
 ## Table of contents
 * [General Info](#general-info)
-* [Technologies](#technologies)
 * [Learning Goals](#learning-goals)
+* [Technologies](#technologies)
 * [Usage](#usage)
 
 ## General Info
-This is a solo project that was assigned to us during week 1 of Mod 2. For our first project in Rails, we were to create a one-to-many relationship with our data.
+This is a solo project that was assigned to us during week 1 of Mod 2. For our first project utilizing Ruby on Rails, we were to create a one-to-many relationship with our data and create web pages that allow users to CRUD resources.
+
+## Learning Goals
+* Write migrations to create tables with columns of varying data types and foreign keys.
+* Create instance and class methods on a Rails model that use ActiveRecord methods and helpers.
+* Write model and feature tests that fully cover data logic and user behavior.
 
 ## Technologies
 Project is created with:
 * Rails 5.2
 * Ruby 2.7
-
-## Learning Goals
-* Write migrations to create tables with columns of varying data types and foreign keys.
-* Use Rails to create web pages that allow users to CRUD resources.
-* Create instance and class methods on a Rails model that use ActiveRecord methods and helpers.
-* Write model and feature tests that fully cover data logic and user behavior.
 
 ## Schema Design
 Below is my design for the one-to-many relationship we were to create for this project. 
