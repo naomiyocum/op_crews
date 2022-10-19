@@ -4,6 +4,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/naomiyocum/op_crews?color=yellow)
 ![Watchers](https://img.shields.io/github/watchers/naomiyocum/op_crews?style=social)
 
+![one-piece](https://user-images.githubusercontent.com/102825498/196816536-5da9d3a7-aa27-47c0-bfbc-6e97f017dfec.jpeg)
+
 ## Table of contents
 * [General Info](#general-info)
 * [Learning Goals](#learning-goals)
