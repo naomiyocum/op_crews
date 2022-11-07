@@ -9,6 +9,7 @@
 * [General Info](#general-info)
 * [Learning Goals](#learning-goals)
 * [Technologies](#technologies)
+* [Schema Design] (#schema-design)
 * [Usage](#usage)
 
 ## General Info
