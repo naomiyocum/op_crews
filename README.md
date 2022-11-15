@@ -37,6 +37,7 @@ First, clone this repo onto your local machine.
 Then, run the following in your Terminal:
 
 ```
+cd op_crews
 bundle install
 rails db:{drop,create,migrate,seed}
 rails s
