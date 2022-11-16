@@ -36,7 +36,7 @@ Influenced by One Piece (great anime btw) - a crew has many characters and a cha
 
 ## Usage
 
-First, clone this repo onto your local machine.
+First, clone this repo onto your local machine by running `git clone` with the copied URL.<br>
 Then, run the following in your Terminal:
 
 ```
