@@ -24,6 +24,9 @@ This is a solo project that was assigned to us during week 1 of Mod 2. For our f
 Project is created with:
 * Rails 5.2
 * Ruby 2.7
+* Rspec
+* VSCode
+* Git
 
 ## Schema Design
 Below is my design for the one-to-many relationship we were to create for this project. 
