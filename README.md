@@ -25,6 +25,8 @@ Project is created with:
 * Rails 5.2
 * Ruby 2.7
 * Rspec
+* Pry
+* SimpleCov
 * VSCode
 * Git
 
